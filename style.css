@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+}
+
+.nav-container{
+    background-color: white;
+    display: flex ;
+    justify-content: space-around;
+    box-shadow: 0 2px 5px gray;
+    padding: 10px;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    width: 30px;
+    /* height: 30px; */
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.nav-container1 > .right-half{
+    display: flex;
+    gap: 20px;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+/* ------------------------- */
+
+.card{
+    padding: 10px;
+    width: 200px;
+    /* border: 2px solid red; */
+    position: relative;
+    padding-bottom: 0;
+}
+
+.card-image{
+    width: 100%;
+    
+}
+
+.card p{
+    margin: 5px 0;    
+    font-weight: 100 !important;
+    
+}
+
+.rating-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 0.2px solid gray;
+}
+
+.bullet{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.offer-container{
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 0.2px solid gray;
+    font-size: 12px;
+    align-items: center;
+    color: #8a584b;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    
+    margin-top: 20px;
+}
+
+.card:hover{
+    outline: 0.5px solid gray;
+}
+
+.rating-container > .rating{
+    display: flex;
+    align-items: center;
+    background-color: #db7c38;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    gap: 4px;
+}
+
+.star{
+    font-size: 12px !important;
+}
+
+.tagged::before{
+    content: 'PROMOTED';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: gray;
+    padding: 4px;
+    color: white;
+    font-size: 12px;
+}
+
+.btn{
+    border: none;
+    display: block;
+    font-weight: bold;
+    color: rgb(58, 58, 240);
+    margin: 10px auto;
+    padding: 5px 0;
+    visibility: hidden;
+}
+ .card:hover .btn{
+    visibility: visible;
+ }
+
+ /* ------------------------------------------ */
+
+
+ .footer{
+    background-color: rgb(17, 17, 17);
+    display: grid;
+    grid-template-columns: repeat(4, aut0);
+    padding: 40px;
+ }

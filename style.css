@@ -18,6 +18,15 @@
     top: 0;
 }
 
+.nav-container a{
+    color: orange;
+    text-decoration: none;
+}
+
+.nav-container a:hover{
+    text-decoration: dotted;
+}
+
 .logo{
     width: 30px;
     /* height: 30px; */
@@ -50,7 +59,7 @@
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid gray;
-    padding: 10px;
+    padding: 20px;
 }
 
 .nav-container1 > .right-half{
@@ -154,6 +163,7 @@
     margin: 10px auto;
     padding: 5px 0;
     visibility: hidden;
+    background-color: white;
 }
  .card:hover .btn{
     visibility: visible;
@@ -165,6 +175,46 @@
  .footer{
     background-color: rgb(17, 17, 17);
     display: grid;
-    grid-template-columns: repeat(4, aut0);
-    padding: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px;
  }
+
+ .footer > div{
+    display: flex;
+    flex-flow: column wrap;
+ }
+
+ .footer > div > a{
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+ }
+
+ .footer > div > a:hover{
+    /* text-decoration: none; */
+    color: rgb(255, 255, 255);
+ }
+
+ .footer img{
+    width: 180px;
+    transition-duration: 0.4s;
+ }
+
+ .footer img:hover{
+    width: 200px;
+ }
+
+
+ .grid-item{
+    gap: 30px;
+ }
+ 
+ .logos{
+    gap: 20px;
+    align-items: center;
+ }
+
+ .footer  h3{
+    color: #808080;
+    margin: 10px 0;
+ }
+
